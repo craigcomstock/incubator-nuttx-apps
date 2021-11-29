@@ -1,3 +1,3 @@
-ifneq ($(CONFIG_SYSTEM_CFAGENT),)
+ifneq ($(CONFIG_SYSTEM_CFENGINE),)
 CONFIGURED_APPS += $(APPDIR)/system/cfengine
 endif

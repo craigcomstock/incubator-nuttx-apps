@@ -1,19 +1,19 @@
-config SYSTEM_CFAGENT
-	tristate "cfagent"
+config SYSTEM_CFENGINE
+	tristate "cfengine"
 	default n
 
-if SYSTEM_CFAGENT
+if SYSTEM_CFENGINE
 
-config SYSTEM_CFAGENT_PROGNAME
+config SYSTEM_CFENGINE_PROGNAME
 	string "Program name"
-	default "cfagent
+	default "cf-agent"
 
-config SYSTEM_CFAGENT_PRIORITY
-	int "cfagent task priority"
+config SYSTEM_CFENGINE_PRIORITY
+	int "cfengine task priority"
 	default 100
 
-config SYSTEM_CFAGENT_STACKSIZE
-	int "cfagent stack size"
+config SYSTEM_CFENGINE_STACKSIZE
+	int "cfengine stack size"
 	default DEFAULT_TASK_STACKSIZE
 
 endif
